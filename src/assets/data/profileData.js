@@ -117,7 +117,7 @@ export const profileData = {
         "AWS Amplify",
         "Aws RDS",
       ],
-      website: "www.taxgoglobal.com",
+      website: "https://www.taxgoglobal.com",
     },
     {
       title: "Tax Calculator",
@@ -135,7 +135,7 @@ export const profileData = {
         "Aws Codepipeline",
         "Aws Elastic Beanstalk",
       ],
-      website: "www.taxgoglobal.com/tax-calculator",
+      website: "https://www.taxgoglobal.com/tax-calculator",
     },
     {
       title: "Mapp-In",
@@ -153,7 +153,7 @@ export const profileData = {
         "Aws Codepipeline",
         "Aws Elastic Beanstalk",
       ],
-      website: "www.mapp-in.info",
+      website: "https://www.mapp-in.info",
     },
     {
       title: "Parcel-King",
@@ -171,7 +171,7 @@ export const profileData = {
         "Aws Codepipeline",
         "Aws Elastic Beanstalk",
       ],
-      website: "www.parcel-king.com",
+      website: "https://www.parcel-king.com",
     },
     {
       title: "Esca Menu",
@@ -180,7 +180,7 @@ export const profileData = {
         "App lets Cooks and Foodies engage online to enjoy authentic foods, Feels like home when we are away",
       tags: ["React", "Firebase"],
       techs: ["React", "Firebase"],
-      website: "www.escamenu.com",
+      website: "https://www.escamenu.com",
     },
     {
       title: "Esca Crypto",
@@ -189,7 +189,7 @@ export const profileData = {
         "Escamenu's ongoing project for building a browser extension lets user earn crypto rewards for ordering food online",
       tags: ["React", "Firebase"],
       techs: ["React", "Firebase"],
-      website: "www.escacrypto.com",
+      website: "https://www.escacrypto.com",
     },
   ],
   workTimeline: [
