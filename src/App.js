@@ -8,14 +8,14 @@ import MUITheme from "./assets/theme/MUITheme";
 import Home from "./pages/Home/Home";
 
 import CssBaseline from "@mui/material/CssBaseline";
-import Routing from "./Routing/Routing";
+import WebRouting from "./Routing/WebRouting";
 
 function App() {
   return (
     <div className="App">
       <CssBaseline />
       <MUITheme>
-        <Routing />
+        <WebRouting />
       </MUITheme>
     </div>
   );
