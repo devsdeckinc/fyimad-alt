@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, Grid } from "@mui/material";
+import { Card, CardContent, CardHeader, Grid, Typography } from "@mui/material";
 import React, { Component } from "react";
 import { profileData } from "../../assets/data/profileData";
 import Home from "../Home/Home";
@@ -23,7 +23,19 @@ class Experience extends Component {
                 overflow: "scroll",
               }}
             >
-              <CardHeader title={"Career Timeline"} />
+              <CardHeader
+                className="w-100"
+                title={
+                  <Typography className="w-100 d-flex text-left font-weight-bold">
+                    Career Timeline
+                  </Typography>
+                }
+                subheader={
+                  <Typography className="w-100 d-flex text-left font-weight-bold">
+                    Showing timeline of my work life till date
+                  </Typography>
+                }
+              />
               <WorkTimeline position="left" data={profileData.workTimeline} />
             </Card>
           </Grid>
@@ -38,8 +50,25 @@ class Experience extends Component {
                 overflow: "scroll",
               }}
             >
-              <CardHeader title={"Education Timeline"} />
-              <WorkTimeline position="right" data={profileData.workTimeline} />
+              <CardHeader
+                className="w-100"
+                title={
+                  <Typography className="w-100 d-flex text-left font-weight-bold">
+                    Education Timeline
+                  </Typography>
+                }
+                subheader={
+                  <Typography className="w-100 d-flex text-left font-weight-bold">
+                    Showing timeline of my education and academic projects
+                  </Typography>
+                }
+              />
+              <CardContent className="w-100 m-auto">
+                <WorkTimeline
+                  position="right"
+                  data={profileData.educationTimeline}
+                />
+              </CardContent>
             </Card>
           </Grid>
         </Grid>

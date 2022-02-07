@@ -16,8 +16,11 @@ import TimelineCard from "../../../components/TimelineCard";
 export default function WorkTimeline(props) {
   return (
     <Timeline position={props.position || "left"}>
-      {props.data.reverse().map((item, index) => (
+      {props.data.map((item, index) => (
         <TimelineItem key={index}>
+          <TimelineOppositeContent color="text.secondary">
+            {item.location}
+          </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
             <TimelineDot color="secondary" variant="outlined"></TimelineDot>

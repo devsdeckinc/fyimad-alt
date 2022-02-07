@@ -192,7 +192,101 @@ export const profileData = {
       website: "https://www.escacrypto.com",
     },
   ],
+  educationTimeline: [
+    {
+      company: "National College of Ireland",
+      role: "Master in Data Analytics",
+      period: "Jan 2017 - Mar 2018",
+      description:
+        "Learned the Concept of Data Analytics, Business Intelligence, Data Mining and Data Visualization",
+      duties: [
+        "Forecasted Sales of Video Gaming Industry using Machine Learning Algorithms (Neural Network)",
+        "Performance analysis for Storage System and Databases such as Cassandra, Mongo DB",
+        "Created Data Warehouse (SSIS) and Visualized Reports using Tableau & Quik Sense",
+      ],
+      project: [
+        "Submitted Paper on how the video gaming industry can benefit using machine learning techniques to identify the changing trend in Market and Able to Forecast Sales with efficiency of 82% using Netural Networks",
+      ],
+      education: true,
+      location: "Chennai, India",
+    },
+    {
+      company: "Panimalar Engineering College",
+      role: "Bachelors in Mechanical Engineering",
+      period: "Jun 2009 - April 2013",
+      description:
+        "Engineering was the learning curve for me how the mechanical world works and How tranditional System took a huge change over using modern technologies",
+      duties: [
+        "Instered in Automations and Automotive designs",
+        "Designed and Build effective Auto Cad designs for automobiles, Simulated designs and achieved operational performance in Ansys",
+        "Got Placed On-Campus for Wipro Technologies and Infosys Limited",
+      ],
+      project: [
+        "Submitted Paper on How Computerized System can Improve the Efficiency of Water Jet Cutting Edge Machine, It was a part of My Professors Ph.D Paper",
+      ],
+      education: true,
+      location: "Dublin, Ireland",
+    },
+  ],
   workTimeline: [
+    {
+      company: "Tax GO Global",
+      role: "Senior Software Developer",
+      period: "Jan 2020 - Present",
+      description:
+        "As Organization grew, Built & Migrated entire website and Application to latest technologies. From front end to backend, databases and deployed in cloud server. Successfully migrated data and resources, Managed the servers and storage system",
+      duties: [
+        "Designed navigation routing system to help logistic, delivery driver to identify best route and reduced journey time by 15%",
+        "Successfully automated booking process from various platform (Shopify) with Parcel-King to enable user to Integrated their existing business",
+        "Performed application testing along with clients and users, directed app developer to improve performance and fix user issues",
+      ],
+      location: "Dublin, India",
+    },
+    {
+      company: "Tax GO Global",
+      role: "Software Developer",
+      period: "May 2018 - Jan 2020",
+      description:
+        "As a Sole Developer in Organization Carried our website and applciation development, identified and resolved issue, techical failure in an Accounting Software, Building resources, Optimizing reports, bug free application",
+      duties: [
+        "Redesigned architecture to improve app performance, user experience and latest technology to stay updated",
+        "Successfully migrated Domain, Web Hosting and Data Migration reduced cost around 60%",
+        "Reports Optimization, Error Elimination, dynamic & reusable code and significance improvement to UI and web services",
+        "Improved user experience & usability of the application by providing efficient solution, data suggestions, automated responses",
+      ],
+
+      location: "Dublin, Ireland",
+    },
+    {
+      company: "Infosys Limited",
+      role: "Senior Software Engineer",
+      period: "Nov 2015 - Jun 2016",
+      description:
+        "Emerged myself as a leading Java Full Stack Application developer, Also involved in implementing latest technologies, Lead a team of Junior Developer and Become a Scrum manager of our Agile Team, Successfully Build a Search Engine for searching document and optimized by 40% and increased the efficiency of the result by introducing various widgets.",
+      duties: [
+        "Lead a successful development team for web application as scrum master",
+        "Implemented Modern UI for entire application with help of UI Designer",
+        "Build SOLR search engine and optimized it to 45% and introduced version-based search engine",
+        "Initiated plans to develop suggestion/recommendation tools which enhanced user interaction with application",
+        "Acted as admin for certain modules, project release and application integration manager (SVN)",
+      ],
+      location: "Chennai, India",
+    },
+    {
+      company: "Infosys Limited",
+      role: "Software Engineer",
+      period: "Jan 2014 - Nov 2015",
+      description:
+        "Elsevier - Worked with multiple clients making booking publication software and website. Monitoring daily data update activities, reporting and handling clients, software update, issue management. Played key role in assinging and prioriting issues and software patch update",
+      duties: [
+        "Developed Java web application supporting users to handle and manage millions of data across different databases",
+        "Developed Java web services accessing through secure API which improved application performance",
+        "Developed SQL queries to create incident reports, provided insight for data to the client in an interactive manner",
+        "Coordinated with QA team for application test and performed unit testing, integration testing",
+        "Developed SQL queries and UNIX scripts, improved automated batch performance by 40% and reports by 20%",
+      ],
+      location: "Chennai, India",
+    },
     {
       company: "Infosys Limited",
       role: "Software Engineer Trainee",
@@ -203,56 +297,7 @@ export const profileData = {
         "Trained as a Java Application Developer JSF, JSP, Web Containers, Eclipse IDE",
         "Completed training through real-time scenario based requirements and created E-commerce & solved customer facing web issues",
       ],
-    },
-    {
-      company: "Infosys Limited",
-      role: "Software Engineer",
-      period: "Jan 2014 - Nov 2015",
-      description:
-        "Elsevier - Worked with multiple clients making booking publication software and website. Monitoring daily data update activities, reporting and handling clients, software update, issue management. Played key role in assinging and prioriting issues and software patch update",
-      duties: [
-        "Developed Java web application supporting users to handle and manage millions of data across different databases",
-        "Lead a successful development team for web application as scrum master",
-        "Implemented Modern UI for entire application with help of UI Designer",
-        "Build SOLR search engine and optimized it to 45% and introduced version-based search engine",
-        "Initiated plans to develop suggestion/recommendation tools which enhanced user interaction with application",
-        "Acted as admin for certain modules, project release and application integration manager (SVN)",
-        "Developed Java web services accessing through secure API which improved application performance",
-        "Developed SQL queries to create incident reports, provided insight for data to the client in an interactive manner",
-        "Coordinated with QA team for application test and performed unit testing, integration testing",
-        "Developed SQL queries and UNIX scripts, improved automated batch performance by 40% and reports by 20%",
-      ],
-    },
-    {
-      company: "Infosys Limited",
-      role: "Senior Software Engineer",
-      period: "Nov 2015 - Jun 2016",
-      description:
-        "Emerged myself as a leading Java Full Stack Application developer, Also involved in implementing latest technologies, Lead a team of Junior Developer and Become a Scrum manager of our Agile Team, Successfully Build a Search Engine for searching document and optimized by 40% and increased the efficiency of the result by introducing various widgets.",
-      duties: [""],
-    },
-    {
-      company: "Tax GO Global",
-      role: "Software Developer",
-      period: "May 2018 - Jan 2020",
-      description: "As a Sole Developer in Organization Carried our website and applciation development, identified and resolved issue, techical failure in an Accounting Software, Building resources, Optimizing reports, bug free application",
-      duties: [
-        "Redesigned architecture to improve app performance, user experience and latest technology to stay updated",
-        "Successfully migrated Domain, Web Hosting and Data Migration reduced cost around 60%",
-        "Reports Optimization, Error Elimination, dynamic & reusable code and significance improvement to UI and web services",
-        "Improved user experience & usability of the application by providing efficient solution, data suggestions, automated responses",
-      ],
-    },
-    {
-      company: "Tax GO Global",
-      role: "Senior Software Developer",
-      period: "Jan 2020 - Present",
-      description: "As Organization grew, Built & Migrated entire website and Application to latest technologies. From front end to backend, databases and deployed in cloud server. Successfully migrated data and resources, Managed the servers and storage system",
-      duties: [
-        "Designed navigation routing system to help logistic, delivery driver to identify best route and reduced journey time by 15%",
-        "Successfully automated booking process from various platform (Shopify) with Parcel-King to enable user to Integrated their existing business",
-        "Performed application testing along with clients and users, directed app developer to improve performance and fix user issues",
-      ],
+      location: "Mysore, India",
     },
   ],
 };

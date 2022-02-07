@@ -6,8 +6,18 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
-import { CardHeader } from "@mui/material";
+import {
+  CardActionArea,
+  CardHeader,
+  Collapse,
+  Fade,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
 import TimePeriodAction from "./TimePeriodAction";
+import { Check, ExpandMoreOutlined } from "@mui/icons-material";
 
 const bull = (
   <Box
@@ -43,13 +53,14 @@ const card = (
 );
 
 const useStyles = makeStyles((theme) => ({
-  highlightCard: {...theme.palette.card, width: 300},
-  
+  highlightCard: { ...theme.palette.card, width: 400 },
   h5: theme.palette.h5,
   subtitle2: theme.palette.subtitle2,
 }));
 export default function TimelineCard(props) {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+
   return (
     <Box>
       <Card className={classes.highlightCard} variant="outlined">
@@ -68,15 +79,73 @@ export default function TimelineCard(props) {
               {props.data.company || "Company"}
             </Typography>
           }
-          action={<TimePeriodAction period={props.data.period}/>}
+          action={<TimePeriodAction period={props.data.period} />}
         />
         <CardContent>
-          <Typography variant="body1">
-            {props.data.content || "Worked on Multiple Project"}
-          </Typography>
-          <Typography variant="body2">
-            {props.data.description || "Worked on Multiple Project"}
-          </Typography>
+          <CardContent>
+            <Typography variant="body2">
+              {props.data.description || "Worked on Multiple Project"}
+            </Typography>
+          </CardContent>
+          {props.data.project && (
+            <Card className={classes.highlightCard}>
+              <CardHeader
+                title={
+                  <Typography
+                    variant="small"
+                    sx={{ textDecoration: "underline" }}
+                    className="font-weight-bold"
+                  >
+                    Academic Project
+                  </Typography>
+                }
+              />
+              <CardContent>
+                <Typography>{props.data.project}</Typography>
+              </CardContent>
+            </Card>
+          )}
+          <CardActions
+            className="w-100"
+            onClick={() => setOpen(!open)}
+            disableSpacing
+          >
+            <Button color="secondary">
+              Read More <ExpandMoreOutlined />
+            </Button>
+          </CardActions>
+          <CardActionArea>
+            <Collapse in={open}>
+              <Fade in={open}>
+                <List>
+                  {props.data.duties.map((item, index) => (
+                    <ListItem>
+                      <ListItemIcon sx={{ minWidth: 25 }}>
+                        <Check
+                          sx={{
+                            color: "primary.alternative",
+                            fontSize: 15,
+                            fontWeight: 700,
+                          }}
+                        />
+                      </ListItemIcon>
+                      <ListItemText>
+                        <Typography
+                          sx={{
+                            color: "#8c8c8e",
+                            fontSize: "14px",
+                            fontWeight: 500,
+                          }}
+                        >
+                          {item}
+                        </Typography>
+                      </ListItemText>
+                    </ListItem>
+                  ))}
+                </List>
+              </Fade>
+            </Collapse>
+          </CardActionArea>
         </CardContent>
       </Card>
     </Box>
