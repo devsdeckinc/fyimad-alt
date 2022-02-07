@@ -11,6 +11,7 @@ import {
 import Home from "../pages/Home/Home";
 import Dashboard from "../pages/Screens/Dashboard";
 import Experience from "../pages/Screens/Experience";
+import Skills from "../pages/Screens/Skills";
 
 export default class Routing extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default class Routing extends Component {
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
           <Route path="/experience" element={<Experience />} />
-          <Route path="/skills" element={<Users2 />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/blogs" element={<Users2 />} />
           <Route path="/projects" element={<Users2 />} />
         </Routes>
