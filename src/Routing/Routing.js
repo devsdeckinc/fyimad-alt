@@ -27,8 +27,8 @@ export default class Routing extends Component {
           <Route exact path="/" element={<Dashboard />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/blogs" element={<Users2 />} />
-          <Route path="/projects" element={<Users2 />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
     );
@@ -41,6 +41,32 @@ function Users2() {
   return (
     <Home params={params}>
       <Link to="users">My Home</Link>
+    </Home>
+  );
+}
+
+function Projects() {
+  let params = useLocation();
+  console.log(params);
+  return (
+    <Home params={params}>
+      <Typography>Projects Page is Coming Soon</Typography>
+      <Link to="/">Go Home</Link>
+    </Home>
+  );
+}
+function Blogs() {
+  let params = useLocation();
+  console.log(params);
+  return (
+    <Home params={params}>
+      <Typography>Blogs is Coming Soon</Typography>
+      <div>
+        <a href="https://medium.com/@devsfutureinc" target="_blank">
+          Visit My Medium Blog Page
+        </a>
+      </div>
+      <Link to="/">Go Home</Link>
     </Home>
   );
 }
