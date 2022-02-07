@@ -49,7 +49,7 @@ export const profileData = {
       value: "themeforest",
     },
   ],
-  menu: ["Home", "Experience", "Project", "Skills", "Skills"],
+  menu: ["Home", "Experience", "Project", "Skills", "Blogs"],
   menuLink: [
     {
       title: "Home",
@@ -61,22 +61,22 @@ export const profileData = {
       description: "Work Experience and Works Carried throughout my career",
       link: "/experience",
     },
-    {
+    /*{
       title: "Project",
       description:
         "My Projects which helped to grow knowledge in the field of Development and Software",
       link: "/projects",
-    },
+    },*/
     {
       title: "Skills",
       description: "My top to bottom Skills Showcase",
       link: "/skills",
     },
-    {
+    /*{
       title: "Blogs",
       description: "My Blogs and Blog links",
       link: "/blogs",
-    },
+    },*/
   ],
   experienceOverview: [
     {
