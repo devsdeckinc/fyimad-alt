@@ -83,7 +83,7 @@ function DrawerBox(props) {
   const classes = useStyles();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };

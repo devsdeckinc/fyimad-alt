@@ -149,7 +149,7 @@ function CarousalBanner() {
             </Typography>
           </div>
           <br />
-          <Button color="secondary" variant="contained">
+          <Button href="/experience" color="secondary" variant="contained">
             Explore
           </Button>
         </CardContent>
