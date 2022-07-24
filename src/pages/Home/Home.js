@@ -35,9 +35,26 @@ class Home extends Component {
           }}
         >
           {this.props.children}
-
         </Box>
         <DrawerBox {...this.props} />
+
+        <Box
+          sx={{
+            background: "#20202a",
+            position: "absolute",
+            bottom: 0,
+            padding: 1,
+            textAlign: "center",
+            zIndex: 999,
+            width: "100%",
+            fontSize: 12,
+            textTransform: "uppercase",
+            color: "#FFFFFF30",
+            fontWeight: 700,
+          }}
+        >
+          Created with React - MUI and Bootstrap - @<a target="_blank" href="https://www.fyimad.com">www.fyimad.com</a>
+        </Box>
       </Paper>
     );
   }

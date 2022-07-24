@@ -52,24 +52,6 @@ class Dashboard extends Component {
               <OverView />
               <ProfileHighlights />
             </CardContent>
-
-            <Box
-              sx={{
-                background: "#20202a",
-                position: "absolute",
-                bottom: 0,
-                padding: 1,
-                textAlign: "center",
-                zIndex: 999,
-                width: "100%",
-                fontSize: 12,
-                textTransform: 'uppercase',
-                color: "#FFFFFF30",
-                fontWeight: 700
-              }}
-            >
-              Created with React - MUI and Bootstrap
-            </Box>
           </Card>
         </Home>
       );

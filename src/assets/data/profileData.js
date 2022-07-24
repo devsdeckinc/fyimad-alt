@@ -316,7 +316,7 @@ export const profileData = {
       description:
         "A Restaurant booking system manager with market place for online vendors",
       techStack: ["React", "Node-ts", "AWS", "SQL"],
-      integrations: ["Stripe", "Kiwk Deliveries", "Magic Link", "Places API"],
+      integrations: ["Stripe", "Kiwk Deliveries", "Magic Link", "Places API", "Firebase"],
       period: "8 Months",
     },
     {
@@ -333,7 +333,7 @@ export const profileData = {
       type: "Web App - Dashboard",
       description: "A Courier system with Logistics Mangement Web app",
       techStack: ["React", "Node-js", "AWS", "SQL"],
-      integrations: ["Stripe", "Google Maps API"],
+      integrations: ["Stripe", "Google Maps API", "Figma"],
       period: "1+ year - with Tax GO Global - Current ongoing project",
     },
     {
@@ -341,15 +341,15 @@ export const profileData = {
       type: "Mobile App",
       description: "Mobile app for Routing Optimization",
       techStack: ["React-Native", "Node-js", "AWS", "SQL"],
-      integrations: ["Google Maps API", "Graphhopper", "Jspirit"],
+      integrations: ["Google Maps API", "Graphhopper", "Jspirit", "Xcode", "Android Studio",],
       period: "1+ year - with Tax GO Global - Current ongoing project",
     },
     {
       title: "Tax GO Global",
       type: "Web App and Mobile App",
       description: "An Invoicing and Accounting Manaement Web and Mobile App",
-      techStack: ["React", "React-Native", "Node-js", "AWS", "SQL"],
-      integrations: ["Stripe"],
+      techStack: ["React", "React-Native", "Node-js", "AWS", "Postgres"],
+      integrations: ["Xcode", "Android Studio", "Braintree", "Cpanel"],
       period: "4+ year - with Tax GO Global - Current ongoing project",
     },
   ],

@@ -28,7 +28,7 @@ import {
 } from "@mui/icons-material";
 import { Card, Collapse, Fade, Slide } from "@mui/material";
 import { profileData } from "../../assets/data/profileData";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const drawerWidth = 240;
 const minWidth = 70;
@@ -87,10 +87,11 @@ function DrawerBox(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  let history = useLocation();
+
   const [tab, setTab] = React.useState(
-    (props &&
-      props.params &&
-      props.params.pathname.toString().replace("/", "")) ||
+    (history &&
+      history.pathname.toString().replace("/", "")) ||
       "Home"
   );
   const drawer = (
