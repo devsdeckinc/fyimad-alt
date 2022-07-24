@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 
 import CssBaseline from "@mui/material/CssBaseline";
 import Routing from "./Routing/Routing";
+import BuyMeACoffee from "./components/BuyMeACoffee";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <CssBaseline />
       <MUITheme>
         <Routing />
+        <BuyMeACoffee />
       </MUITheme>
     </div>
   );

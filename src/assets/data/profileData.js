@@ -61,12 +61,12 @@ export const profileData = {
       description: "Work Experience and Works Carried throughout my career",
       link: "/experience",
     },
-    /*{
+    {
       title: "Project",
       description:
         "My Projects which helped to grow knowledge in the field of Development and Software",
       link: "/projects",
-    },*/
+    },
     {
       title: "Skills",
       description: "My top to bottom Skills Showcase",
@@ -298,6 +298,59 @@ export const profileData = {
         "Completed training through real-time scenario based requirements and created E-commerce & solved customer facing web issues",
       ],
       location: "Mysore, India",
+    },
+  ],
+  projects: [
+    {
+      title: "Esca",
+      type: "Cross-Browser Extension",
+      description:
+        "A Cross-Browser extension to track online food orders and rewards the customers with crypto cashback",
+      techStack: ["React", "Extension Manifest v3", "Node-ts", "AWS", "SQL"],
+      integrations: ["Magic Link"],
+      period: "1 Months",
+    },
+    {
+      title: "Escamenu",
+      type: "Market Place - Web App",
+      description:
+        "A Restaurant booking system manager with market place for online vendors",
+      techStack: ["React", "Node-ts", "AWS", "SQL"],
+      integrations: ["Stripe", "Kiwk Deliveries", "Magic Link", "Places API"],
+      period: "8 Months",
+    },
+    {
+      title: "Mapp-in",
+      type: "PWA (Progessive Web App)",
+      description:
+        "Map based socializing app to find near by entertainments and cafes with loyalities",
+      techStack: ["React", "Node-js", "AWS", "SQL", "Dynamo DB"],
+      integrations: ["Stripe", "Google Maps API"],
+      period: "1 year",
+    },
+    {
+      title: "Parcel-King Web App",
+      type: "Web App - Dashboard",
+      description: "A Courier system with Logistics Mangement Web app",
+      techStack: ["React", "Node-js", "AWS", "SQL"],
+      integrations: ["Stripe", "Google Maps API"],
+      period: "1+ year - with Tax GO Global - Current ongoing project",
+    },
+    {
+      title: "Parcel-King",
+      type: "Mobile App",
+      description: "Mobile app for Routing Optimization",
+      techStack: ["React-Native", "Node-js", "AWS", "SQL"],
+      integrations: ["Google Maps API", "Graphhopper", "Jspirit"],
+      period: "1+ year - with Tax GO Global - Current ongoing project",
+    },
+    {
+      title: "Tax GO Global",
+      type: "Web App and Mobile App",
+      description: "An Invoicing and Accounting Manaement Web and Mobile App",
+      techStack: ["React", "React-Native", "Node-js", "AWS", "SQL"],
+      integrations: ["Stripe"],
+      period: "4+ year - with Tax GO Global - Current ongoing project",
     },
   ],
 };

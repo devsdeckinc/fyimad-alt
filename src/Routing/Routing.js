@@ -11,6 +11,7 @@ import {
 import Home from "../pages/Home/Home";
 import Dashboard from "../pages/Screens/Dashboard";
 import Experience from "../pages/Screens/Experience";
+import Projects from "../pages/Screens/Projects";
 import Skills from "../pages/Screens/Skills";
 
 export default class Routing extends Component {
@@ -45,16 +46,7 @@ function Users2() {
   );
 }
 
-function Projects() {
-  let params = useLocation();
-  console.log(params);
-  return (
-    <Home params={params}>
-      <Typography>Projects Page is Coming Soon</Typography>
-      <Link to="/">Go Home</Link>
-    </Home>
-  );
-}
+
 function Blogs() {
   let params = useLocation();
   console.log(params);
